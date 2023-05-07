@@ -10,10 +10,24 @@ const Home: NextPage = () => {
         <meta name="description" content="Clerk example app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-center">
-        <div>hi</div>
+      <main className="flex min-h-screen items-center justify-center gap-12">
         <div>
-          <SignUp path="/" routing="path" signInUrl="/sign-in" />
+          <SignUp
+            path="/"
+            routing="path"
+            afterSignInUrl="/home"
+            afterSignUpUrl="/home"
+            redirectUrl="/home"
+            appearance={{
+              variables: {
+                colorBackground: "#1f2937",
+              },
+            }}
+          />
+        </div>
+        <div>
+          <h1 className="mb-2 text-4xl">Welcome to Clerk Example!</h1>
+          <p className="">This app explores clerk.dev</p>
         </div>
       </main>
     </>
