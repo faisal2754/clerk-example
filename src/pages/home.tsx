@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen items-center justify-center gap-12">
+      <main className="flex flex-col min-h-screen items-center justify-center gap-12">
         {user && <div>Hi {user.fullName}</div>}
         <button onClick={handleSignOut}>Sign Out</button>
       </main>

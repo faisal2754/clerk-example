@@ -10,6 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@clerk/clerk-sdk-node": "^4.8.7",
     "@clerk/nextjs": "^4.17.1",
     "@clerk/themes": "^1.6.4",
     "@prisma/client": "^4.13.0",

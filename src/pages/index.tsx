@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <div>
           <SignUp
             path="/"
-            routing="path"
+            routing="virtual"
             afterSignInUrl="/home"
             afterSignUpUrl="/home"
             redirectUrl="/home"
